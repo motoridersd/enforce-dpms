@@ -57,7 +57,7 @@ do
 	done
 
 	echo "Enforcing DPMS sleep mode"
-	for counter in {1..150}
+	for counter in {1..250}
 	do
 		busctl --user set-property org.gnome.Mutter.DisplayConfig /org/gnome/Mutter/DisplayConfig org.gnome.Mutter.DisplayConfig PowerSaveMode i 3
 		sleep 0.1
